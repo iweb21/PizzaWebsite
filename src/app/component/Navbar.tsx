@@ -3,8 +3,7 @@ import { FaPizzaSlice } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { FaBolt } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
-import { IoIosSearch } from "react-icons/io";
-
+import Image from "next/image";
 export default function Navbar() {
   return (
     <div>
@@ -36,7 +35,7 @@ export default function Navbar() {
 
                 {/**Cart Icon*/}
                 <FaShoppingCart className="w-8 h-8 text-sky-400 rounded-full ring-2 p-1 relative hover:text-amber-400 " />
-                <img
+                <Image
                   className="inline-block  w-8 h-8 rounded-full ring-2 ring-sky-400 "
                   src="https://i.pinimg.com/236x/35/ed/b9/35edb9e9d1629c112b0be81465a8cb95.jpg"
                   alt="user avtar"
