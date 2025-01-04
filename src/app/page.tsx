@@ -10,6 +10,7 @@ import Offer from './component/Offer';
 import Reservation from './component/Reservation';
 import Card from './component/Card';
 import Footer from './component/Footer';
+import Menuitems from './component/Menuitems';
 
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
       <Offer />
       <Card />
       <Reservation />
+      <Menuitems />
       <Footer />
     </div>
   );
