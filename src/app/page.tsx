@@ -6,12 +6,11 @@ import Pizza from './component/Pizza';
 import Banner from './component/Banner';
 import ProductList from './component/ProductList';
 import Home from './component/Menuitems'; 
-import Testimonals from './component/Testimonals';
 import Offer from './component/Offer';
 import Reservation from './component/Reservation';
 import Card from './component/Card';
 import Footer from './component/Footer';
-import Menuitems from './component/Menuitems';
+
 
 export default function App() {
   return (
@@ -26,7 +25,6 @@ export default function App() {
       <Offer />
       <Card />
       <Reservation />
-      <Testimonals />
       <Footer />
     </div>
   );
