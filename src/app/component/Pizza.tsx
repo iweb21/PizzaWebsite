@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
+import Image from "next/image";
 
-
-import { TbBackground } from "react-icons/tb";
 
 const Products = [
   {
@@ -79,7 +78,7 @@ export default function ProductList() {
               }}
             ></div>
 
-            <img
+            <Image
               className="relative w-50"
               src={product.imageUrl}
               alt={product.title}
