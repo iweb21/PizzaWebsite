@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const FloatingImageContentBlock = () => {
   return (
@@ -34,7 +35,7 @@ const FloatingImageContentBlock = () => {
         <div className="md:w-1/2 mt-6 md:mt-0">
 
 
-       <img
+       <Image
         src="https://img.freepik.com/free-vector/hand-drawn-pizza-pattern-background_23-2150905263.jpg?ga=GA1.1.289545309.1731409775&semt=ais_hybrid"
         alt="Delicious pizza"
         className="w-full h-auto md:w-1/2 rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105 mr-7"
