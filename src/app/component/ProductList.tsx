@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { TbBackground } from "react-icons/tb";
+import React from "react";
 
 const Products = [
   {
