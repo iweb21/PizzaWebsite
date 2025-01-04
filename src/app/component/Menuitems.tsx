@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-
 import ProductCard from "./Productcard";
 import { Product } from "@/pages/types";
+import Image from "next/image";
 
 const ButgeryMenu = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -63,9 +63,13 @@ const ButgeryMenu = () => {
       <div className="relative z-10">
         <div className="max-w-6xl max-auto text-center mb-8">
           <h1 className="text-4xl font-bold text-red-600 mb-4">
-           Delicious Pizza
+            Delicious Pizza
           </h1>
-          <p className="text-xl text-white"> Discover the delicious pizza options in our menu, crafted to satisfy your cravings!</p>
+          <p className="text-xl text-white">
+            {" "}
+            Discover the delicious pizza options in our menu, crafted to satisfy
+            your cravings!
+          </p>
         </div>
 
         {/* Product section */}
@@ -101,7 +105,7 @@ const ButgeryMenu = () => {
                         key={index}
                         className="flex items-center justify-center mb-6 transform transition-all duration-300 ease-in-out"
                       >
-                        <img
+                        <Image
                           src={product.image}
                           alt={product.image}
                           className="w-20 h-20 sm:w-24 inline-block transition-transform duration-300 ease-in-out transform text-black"
@@ -115,7 +119,11 @@ const ButgeryMenu = () => {
 
                   <div className="flex justify-between items-center mt-6 text-black">
                     <span className="font-semibold text-xl">
-                      Total: ${cart.reduce((total, product) => total + product.price, 0)}
+                      Total: $
+                      {cart.reduce(
+                        (total, product) => total + product.price,
+                        0
+                      )}
                     </span>
 
                     <div>
@@ -146,7 +154,9 @@ const ButgeryMenu = () => {
         {isCheckout && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 text-black">
             <div className="bg-white p-8 rounded-lg shadow-lg w-full sm:w-96">
-              <h2 className="text-4xl font-bold text-blue-600 mb-4">Checkout</h2>
+              <h2 className="text-4xl font-bold text-blue-600 mb-4">
+                Checkout
+              </h2>
               <p className="text-lg text-red-600">
                 Please confirm your order before proceeding
               </p>
@@ -178,7 +188,9 @@ const ButgeryMenu = () => {
 
                 <button
                   onClick={() =>
-                    alert("Order confirmed. It will be delivered to your doorstep!")
+                    alert(
+                      "Order confirmed. It will be delivered to your doorstep!"
+                    )
                   }
                   className="bg-green-600 text-white py-2 px-6 rounded-lg text-lg shadow-md hover:bg-green-700 transition duration-300"
                 >
