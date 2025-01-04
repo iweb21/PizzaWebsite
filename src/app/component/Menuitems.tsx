@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import ProductCard from "./Productcard";
 import { Product } from "@/pages/types";
 import Image from "next/image";
@@ -10,7 +10,6 @@ const ButgeryMenu = () => {
   const [cart, setCart] = useState<Product[]>([]);
   const [showCard, setShowCard] = useState(false);
   const [isCheckout, setIsCheckout] = useState(false);
-  const router = useRouter();
 
   useEffect(() => {
     async function fetchProduct() {
