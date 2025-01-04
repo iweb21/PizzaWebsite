@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Carousel() {
   return (
@@ -11,7 +12,7 @@ export default function Carousel() {
                 href=""
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
               >
-                <img
+                <Image
                   src="https://th.bing.com/th/id/OIP.whxJyvOFUxVXA4YjWmy-TwHaE8?w=298&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                   alt="Pizza 1"
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
@@ -28,7 +29,7 @@ export default function Carousel() {
                 href=""
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4"
               >
-                <img
+                <Image
                   src="https://www.mashed.com/img/gallery/fast-food-hot-dogs-that-completely-disappeared-from-menus/hot-dog-bites-pizza-pizza-hut-1678292808.jpg"
                   alt="Pizza 2"
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
@@ -43,7 +44,7 @@ export default function Carousel() {
                   href=""
                   className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
                 >
-                  <img
+                  <Image
                     src="https://th.bing.com/th/id/OIP.8zsxQ53TYvw3Uux3VuQwjgAAAA?rs=1&pid=ImgDetMain"
                     alt="Pizza 3"
                     className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
@@ -58,7 +59,7 @@ export default function Carousel() {
                   href=""
                   className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
                 >
-                  <img
+                  <Image
                     src="https://bluebowlrecipes.com/wp-content/uploads/2019/05/barbecue-chicken-pizza-0917.jpg"
                     alt="Pizza 4"
                     className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
@@ -76,7 +77,7 @@ export default function Carousel() {
                 href=""
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
               >
-                <img
+                <Image
                   src="https://cdn.pixabay.com/photo/2023/04/30/21/34/pizza-7961604_640.jpg"
                   alt="Pizza 5"
                   className=" inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
